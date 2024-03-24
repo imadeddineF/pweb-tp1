@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("./Images/earth.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blackBg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+}
+
+nav {
+  z-index: 100;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.329);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  padding: 12px;
+  transition: all;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#S1 {
+  display: flex;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #f2f2f2; */
+}
+
+.firstH1 {
+  color: #fff;
+  font-size: 2rem;
+  z-index: 50;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.formInputs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.formInputs label {
+  text-wrap: nowrap;
+  color: white;
+  font-weight: bold;
+  /* font-size: 1; */
+}
+
+.formInputs input {
+  width: 280px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: white;
+}
+
+.formInputs select {
+  border-radius: 12px;
+  width: 280px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#S2 {
+  display: flex;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 100px;
+}
+#S2 ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+#S2 ol li {
+  margin-bottom: 15px;
+}
+#S2 ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+#S2 ul li {
+  margin-bottom: 5px;
+}
+#S2 ul ul {
+  list-style-type: square;
+}
+#S2 ul ul li {
+  margin-left: 20px;
+}
+#S2 ul ul ul {
+  list-style-type: circle;
+}
+#S2 ul ul ul li {
+  margin-left: 20px;
+}
+
+#S3 {
+  display: flex;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 100px;
+}
+
+#S3 .langsShow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  list-style: none;
+}
+#S3 .langsShow li {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#S4 {
+  display: flex;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 100px;
+}
+
+#S4 .CSC {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(1, 1, 1);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+#S4 .CSC {
+  font-family: "Courier New", Courier, monospace;
+}
+#S4 .CSC .keyword {
+  color: #d32f2f; /* Red */
+  font-weight: bold;
+}
+#S4 .CSC .number {
+  color: #1976d2; /* Blue */
+}
+#S4 .CSC .string {
+  color: #388e3c; /* Green */
+}
+#S4 .CSC .comment {
+  color: #757575; /* Grey */
+}
+#S4 .CSC .operator {
+  color: #d32f2f; /* Red */
+}
+#S4 .CSC .function {
+  color: #7b1fa2; /* Purple */
+}
+#S4 .CSC .tag {
+  color: #388e3c; /* Green */
+}
+#S4 .CSC .attribute {
+  color: #1976d2; /* Blue */
+}
+#S4 .CSC .variable {
+  color: #1976d2; /* Blue */
+}
+#S4 .CSC .params {
+  color: #1976d2; /* Blue */
+}
+#S4 .CSC .delimiter {
+  color: #1976d2; /* Blue */
+}
+#S4 .CSC .tab-space {
+  margin-left: 20px;
+}
+
+#S4 .random {
+  margin-top: 50px;
+  z-index: 50;
+  width: 920px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+#S4 .scrollToTop {
+  margin-top: 50px;
+  z-index: 50;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 20px;
+  border: none;
+}
+#S4 .scrollToTop:hover {
+  background-color: gray;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+#S4 .scrollToTop a {
+  text-decoration: none;
+  color: black;
+}
+
+#S5 {
+  display: flex;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 100px;
+}
+#S5 div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+#S5 div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#S5 div ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #00000041;
+  padding: 6px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+#S5 div ul li a:hover {
+  background-color: #00000061;
+}
+#S5 div ul li a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+footer {
+  z-index: 100;
+  margin-top: 100px;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.329);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px 10px 0 0;
+  padding: 12px;
+  text-align: center;
+  color: white;
+}
